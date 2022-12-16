@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <title>Tests css</title>
+    <link rel="stylesheet" href="style.css">
+   </head>
+<body id="body">
+    <div id="demo">
+        <form id ="tooltipDivHour">
+            <p id="tooltipTextHour">Entre 0 et 23.5 </p>
+            <label for="inputHour">Heure : </label>
+            <input id="inputHour" type ="number" max="23.5" min="0" size="10" step= 0.5 onchange="demoTime()"></input>
+        </form>
+        <form id="tooltipDivMeteo">
+            <ul id="tooltipTextMeteo" style="list-style: none;"> 
+                <li style="font-style: italic;">Exemples :</li>
+                <li> soleil/ nuit claire : 0 </li>
+                <li> couvert: 2  </li>
+                <li> nuageux : 3  </li>
+                <li> brouillard : 48  </li>
+                <li> petite pluie : 61  </li>
+                <li> petite neige : 71 </li>
+                <li> orage : 99</li>
+            </ul>
+            <label for="inputMeteo">Weathercode : </label>
+            <input id="inputMeteo" type ="number" max="99" min="0" size="10" onchange="demoMeteo()"> </input>
+        </form>
+        <form>
+            <label for="checkbox3"> Réel : </label>
+            <input type="checkbox" id ="checkbox3" name="checkbox3" onchange="reboot()"></input> 
+        </form> 
+    </div>
+    <div class="container">
+         <div id="intemperies"> 
+            <section id="parent">
+            <div id="entete">
+                <div id="divClignottant">
+                <a style="text-decoration:none" href="#" onmouseenter="playAudio()"> <h1> QUELLE GROSSE MARADE</h1></a>
+                <audio id="sound">    
+                    <source src="GrosseMarade.mp3" type="audio/mpeg"/>
+                </audio>
+            </div>
+            </div> 
+            <div class="innerParent divSpaceAround">
+                <div id="weatherIcone"></div> 
+                <p id="temp" class="temperatures"></p>
+                <p id="min" class="temperatures"></p>
+                <p id="max" class="temperatures"></p>
+            </div>
+            <div class=innerParentColumn id="news"></div>
+            <div class="innerParent divSpaceAround">
+                <button class="buttons" id="getAMeme"> Get a meme !</button>
+                <button class="buttons" id="getAJoke"> Get a joke !</button>
+            </div>
+            <div class="innerParent" id="divRadiusCenter">
+                <div id="meme"></div>
+                <div id="blague">  
+                    <h2 id="joke"></h2>
+                    <h2 id="response"></h2>
+                </div>     
+            </div>
+        </section>
+    </div>
+        </div>
+        <script src="script.js"></script> 
+        <script>
+            var audio1 = document.getElementById("sound");
+            function playAudio() {audio1.play();}
+        </script> 
+</body>
+</html>
+
+
+
+     <!--    <input type="range" list="tickmarks" step="30" ondragleave="demoHour()">
+            <datalist id="tickmarks">
+            <option value="0" label="00h"></option>
+            <option value="60"></option>
+            <option value="120"></option>
+            <option value="180"></option>
+            <option value="240"></option>
+            <option value="300"></option>
+            <option value="360"label="6h"></option>
+            <option value="420"></option>
+            <option value="480"></option>
+            <option value="540"></option>
+            <option value="600"></option>
+            <option value="660"></option>
+            <option value="720"label="12h"></option>
+            <option value="780"></option>
+            <option value="840"></option>
+            <option value="900"></option>
+            <option value="960"></option>
+            <option value="1020"></option>
+            <option value="1080" label="18h"></option>
+            <option value="1140"></option>
+            <option value="1200"></option>
+            <option value="1260"></option>
+            <option value="1320"></option>
+            <option value="1380" label="23h"></option>
+            </datalist> -->
