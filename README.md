@@ -1,7 +1,9 @@
 - by Marie Koscianski-Ducharlet, Helder Neves Da Silva Ferreira & Nolwen Major Francès
 
 This two-week group project aimed to get us to learn how to use APIs.
-After a false start trying to fetch an API using a OAUTH identification protocol (too complicated after less than two months of training), we decided to use more simple APIs (meme API, tech jokes API, tech news API, current weater API) and focuse on integrating the data into a user-friendly page which background changes based on the weather data.
+After a false start trying to fetch an API using a OAUTH identification protocol, we reckoned our initial project was too complicated after less than two months of training and decided to start again using more simple APIs.
+
+We ended up combining a few REST API (meme API, tech jokes API, tech news API, current weater API) and focused on integrating the data into a user-friendly page, which background changes based on the weather data.
 
 
 ![Screenshot 2022-12-05 at 15-39-36 Tests css](https://user-images.githubusercontent.com/115166022/205665291-dc774455-3935-4c9d-b52e-f6adbd1a1522.png)
