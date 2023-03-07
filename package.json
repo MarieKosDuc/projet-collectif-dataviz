@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "jquery": "^3.6.1",
-    "puppeteer": "^19.3.0"
-  }
-}
